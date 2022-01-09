@@ -1,0 +1,53 @@
+
+
+
+<div class="container">
+  <div class="row">
+
+    <div class="col">
+
+    </div><!--col1-->
+
+    <div class="col">
+
+      <form [formGroup]="myDatesForm" (ngSubmit)="onSubmit()" id="myDatesFormId">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"><b>Please enter first date</b></label>
+          
+          <input type="date" formControlName="firstYearToCheckDateString" class="form-control" id="date-1" aria-describedby="emailHelp" >
+         
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label"><b>Please enter second date</b></label>
+          <input type="date" formControlName="lastYearToCheckDateString" class="form-control" id="date-2" >
+        </div>
+        
+        <button type="submit" class="btn btn-primary" id="submitDatesButton" [disabled]="myDatesForm.invalid">Calculate</button>
+
+        <p id="madeWithAngular">Made with <img src="../../../assets/images/angular-logo-transp.png" width="48px"> 12</p>
+      </form>
+    
+
+    </div><!--col2-->
+
+    <div class="col">
+
+      <app-show-days [valueTotalDays]=totalDays [isDivFlipped]="isFlipped" #showDaysComponentTemplateReference></app-show-days>
+
+
+    </div><!--col3-->
+  </div><!--row-->
+
+ 
+</div><!--container-->
+
+
+
+ 
+
+
+
+
+
+
+ 

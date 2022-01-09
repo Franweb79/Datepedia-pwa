@@ -1,0 +1,30 @@
+
+<div id="results-wrapper">
+    
+    
+    <div [@flipUnflip]="isDivFlipped ? 'flipped' : 'notFlipped' " *ngIf="valueTotalDays>0;else choose" id="total-results">
+        
+        <p>Total days between {{firstDateToShowWhenFlipped | date}} and {{lastDateToShowWhenFlipped | date}}</p>
+
+        <p>{{valueTotalDays}} days</p>
+
+        <button type="button" (click)="showModal()" class="btn btn-warning" id="didYouKnowButton" data-bs-toggle="modal" data-bs-target="#dataModal">Did you know what happened on these dates?</button>
+
+
+    </div>
+
+    <div id="background-div"></div>
+
+    <ng-template #choose>
+        <div id="choose-div">
+            <p> Please, choose two different dates </p>
+
+        </div>
+     
+    </ng-template>
+</div>
+<app-modal [date1ToShow]="firstDateToShowOnModal" [date2ToShow]="lastDateToShowOnModal" [arrayOfEventsToShow]="arrayOfObjectsWithEvents" #myModalChild >
+    
+</app-modal>
+
+
