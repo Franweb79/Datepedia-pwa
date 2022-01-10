@@ -82,7 +82,7 @@ export class ModalComponent implements OnInit {
 
     this.showError={
       status:0,
-      message:"Sorry, something went wrong, please try again",
+      message:"Sorry, something went wrong, please try again. Maybe your internet connection is wrong?",
       reason:""
     }
 

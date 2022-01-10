@@ -392,7 +392,7 @@ export class ShowDaysComponent implements OnInit,AfterViewInit {
 
         this.modal.showError={
           status:0,
-          message:"Sorry, something went wrong, please try again",
+          message:"Sorry, something went wrong, please try again. Maybe your internet connection is wrong?",
           reason:""
         }
         
