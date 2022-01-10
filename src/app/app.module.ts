@@ -13,6 +13,8 @@ import { ErrorComponent } from './componentes/error-component/error-component.co
 import { ShowDaysComponent } from './componentes/show-days-component/show-days/show-days.component';
 import { ModalComponent } from './componentes/modal-component/modal/modal.component';
 import { ReadmeComponent } from './componentes/readme-component/readme/readme.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,13 @@ import { ReadmeComponent } from './componentes/readme-component/readme/readme.co
     AppRoutingModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
