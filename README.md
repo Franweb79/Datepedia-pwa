@@ -1,6 +1,6 @@
 
 # What does Datepedia-pwa do? 
-
+//TODO update read meand also the read me component. with pwa, error now fixed
 - You can set two different dates, then calculate how many days have passed between them. But also you will be able to know what happenned on such days and month through History
 
 # what have I learned or implemented while developing Datepedia-pwa?
