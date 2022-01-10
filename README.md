@@ -1,6 +1,8 @@
 
 # What does Datepedia-pwa do? 
 //TODO update read meand also the read me component. with pwa, error now fixed
+
+//TODO should show nothing when went offline? not last request even if days requested are the same. Maybe is even showing data saying for example "13 february" and is from the day requested on last request
 - You can set two different dates, then calculate how many days have passed between them. But also you will be able to know what happenned on such days and month through History
 
 # what have I learned or implemented while developing Datepedia-pwa?
