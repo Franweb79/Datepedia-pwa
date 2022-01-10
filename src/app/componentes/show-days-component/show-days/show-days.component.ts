@@ -343,6 +343,15 @@ export class ShowDaysComponent implements OnInit,AfterViewInit {
 
     this._callApi.getEventsPromise(monthToSend1, dayToSend1).then(()=>{
       
+      
+      /*clear myErrObjList just in case last request maybe thrown an error,
+      otherwise it would be shown again
+      
+      As it is a Set, we use the clear() method
+      
+      */
+
+      this.modal.myErrorObjList.clear();
       /*
         clear array first because maybe we have stored results 
         for a previous 2 dates request before
@@ -392,7 +401,7 @@ export class ShowDaysComponent implements OnInit,AfterViewInit {
 
         this.modal.showError={
           status:0,
-          message:"Sorry, something went wrong, please try again. Maybe your internet connection is wrong?",
+          message:"Sorry, something went wrong, please try again. Maybe you have issues with your internet connection?",
           reason:""
         }
         

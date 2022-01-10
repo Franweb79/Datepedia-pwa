@@ -47,7 +47,7 @@ export class CallApiService {
 
     this.modalError={
       status:0,
-      message:"Sorry, something went wrong, please try again",
+      message:"Sorry, something went wrong, please try again. Maybe you have issues with your internet connection?",
       reason:""
     }
 
