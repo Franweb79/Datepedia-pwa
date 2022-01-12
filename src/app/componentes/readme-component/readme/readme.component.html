@@ -27,7 +27,26 @@
         <i>"check README Notes for developers 18"</i>, then you can check that section, and on number 18
         you will find useful information about logic I used. However, nex time I will try to focus more on the <i>"why"</i> than on <i>"how"</i> or <i>"what"</i>
     </p>
+    <p>Also on the README you fill find a KNOWN BUGS section with things to solve</p>
 
+    <h2><span class="h2header"> 2022.01. UPDATE</span></h2>
+
+    <p> Now, <span id="learned">THIS WEBAPP IT HAS BEEN ENHANCED ANS ALSO WORKS NOW AS A PWA</span> (Progressive Web Application). 
+        That means, you can install it on your device and work with it offline! Like a desktop or native mobile app. 
+        It mixes best of both worlds.</p>
+
+        More info:
+
+    <ul>
+        <li> <a href="https://en.wikipedia.org/wiki/Progressive_web_application" target="_blank">Progressive Web Applications</a></li>
+        <li>Check on the link above if your SO and your browser support PWA before installing.</li>
+        
+    </ul>
+
+    <p>Please take in mind that if you use offline version, you can calculate the difference of days between the two dates because it is not needed to go online to perform that task; but you could not retrieve any data from the API and hence when you want to see historic facts happened on those days and months, an error which prompts you to check your connection  would be thrown. </p>
+
+    <p>I fixed a bug from the old non PWA version where error messages and proper data could be shown together.</p>
+    
     <h2><span class="h2header">WHAT DOES Datepedia-pwa DO?</span></h2>
 
     <p><b>You can set two different dates, then calculate how many days have passed between them. But also you will be able to know what happenned on such days and month through History thanks to an API</b></p>
@@ -37,6 +56,10 @@
     <p>This is a little list of things I implemented or done on this project</p>
 
     <ul id="readMeListId">
+
+        <li>
+            Create and install an angular Progressive Web App. Also learned about the <span id="learned">concept of service workers, web workers, webmanifest</span>.
+        </li>
         <li>
             I used <span id="learned">reactive forms</span> -until now, I was more used to template driven ones-, with built-in and <span id="learned">custom validators</span>. For example, custom validator is created to ensure, if user inputs same exact date, form will be invalid.
         </li>

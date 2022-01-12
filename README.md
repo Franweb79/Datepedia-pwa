@@ -1,12 +1,29 @@
 
-# What does Datepedia-pwa do? 
-//TODO update read meand also the read me component. with pwa, error now fixed
+# 2022.01. UPDATE 
 
-//TODO should show nothing when went offline? not last request even if days requested are the same. Maybe is even showing data saying for example "13 february" and is from the day requested on last request
+- Now, THIS WEBAPP IT HAS BEEN ENHANCED ANS ALSO WORKS NOW AS A PWA (Progressive Web Application). That means, you can install it on your device and work with it offline! Like a desktop or native mobile app. It mixes best of both worlds.
+
+- More info:
+    - https://en.wikipedia.org/wiki/Progressive_web_application
+    - Check on the link above if your SO and your browser support PWA before installing.
+
+- Please take in mind that if you use offline version, you can calculate the difference of days between the two dates because it is not needed to go online to perform that task; but you could not retrieve any data from the API and hence when you want to see historic facts happened on those days and months, an error which prompts you to check your connection  would be thrown. 
+
+- I fixed a bug from the old non PWA version where error messages and proper data could be shown together.
+
+
+# What does Datepedia-pwa do? 
+
+
 - You can set two different dates, then calculate how many days have passed between them. But also you will be able to know what happenned on such days and month through History
 
-# what have I learned or implemented while developing Datepedia-pwa?
 
+
+
+
+# What have I learned or implemented while developing Datepedia-pwa?
+
+- Create and install an angular Progressive Web App. Also learned about the concept of service workers, web workers, webmanifest
 - Used promises to get used to async programming. As Angular´s httpClient get() method provides async request, I used Promises to ensure I obtain and control data flow the way I need.
 - I also provide a branch with the same code below, but using async/await to see the differences. Async await provides a cleaner code since the behavior is more similar to what we see on synchronous code
 - Date inputs are ordered. 
@@ -376,3 +393,7 @@
     If the year is the same, for example, 2004-04-06 and 2004-08-09, we will check if that year is leap, and set the amount of total days accordingly to 365 or 366.
 
     Then to obntain the difference (days passed between one date and another) we substract to 365 or 366 the results of days passed from 01-01 until first given date, adding the days remaning until 31-12 from second given date
+
+# Known Bugs
+
+When you are off-line, it could happen that you still see the last data fetched from the API, if app was online the last time you called the API and you use the same data. That is why it even can show data for only one of the dates, if such date has been used online last time, but the other is a new date.
