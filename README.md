@@ -1,7 +1,7 @@
 
 # 2022.01. UPDATE 
 
-- Now, THIS WEBAPP IT HAS BEEN ENHANCED ANS ALSO WORKS NOW AS A PWA (Progressive Web Application). That means, you can install it on your device and work with it offline! Like a desktop or native mobile app. It mixes best of both worlds.
+- Now, THIS WEBAPP IT HAS BEEN ENHANCED AND ALSO WORKS NOW AS A PWA (Progressive Web Application). That means, you can install it on your device and work with it offline! Like a desktop or native mobile app. It mixes best of both worlds.
 
 - More info:
     - https://en.wikipedia.org/wiki/Progressive_web_application
